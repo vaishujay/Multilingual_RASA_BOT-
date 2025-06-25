@@ -1,0 +1,11 @@
+| Category        | Tools Used             |
+| --------------- | ---------------------- |
+| Programming     | Python, SQL            |
+| Frameworks      | RASA, Flask, Socket.IO |
+| NLP Models      | BERT, spaCy            |
+| Database        | MySQL                  |
+| Deployment      | Docker, Twilio         |
+| Annotation      | LabelMe                |
+| Dashboarding    | Streamlit              |
+| Cloud Support   | AWS (optional)         |
+| Version Control | Git, GitHub            |
