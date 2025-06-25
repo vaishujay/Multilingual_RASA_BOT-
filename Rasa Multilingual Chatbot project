@@ -1,0 +1,61 @@
+# 🤖 Multilingual Chatbot using RASA and BERT
+
+This is a domain-specific multilingual chatbot built using the RASA framework and BERT embeddings. It supports multiple languages (English, Hindi, Marathi, and Spanish), collects user details, and handles real-time interactions via Flask, Twilio, and Socket.IO. The bot is designed for use cases across healthcare, food ordering, and education.
+
+---
+
+## 📝 Project Description
+
+The chatbot enables interactive conversations in four languages using separate NLU pipelines and BERT-based language detection. It collects essential user information like name, email, mobile number, and city before continuing with domain-specific dialogues. This project showcases full-stack conversational AI integration with Docker, MySQL, and REST APIs.
+
+---
+
+## 🚀 Features
+
+- 🌐 **Multilingual support**: English, Hindi, Marathi, and Spanish
+- 🧠 **Language Detection**: BERT-based automatic language routing
+- 🧾 **Form handling**: Collects user details using RASA forms and slot validation
+- 🗃️ **MySQL Integration**: Stores user data in a structured format
+- 🧪 **Interactive testing**: Streamlit-based testing dashboard
+- 🐳 **Dockerized deployment**: Containerized with Docker for portability
+- 📞 **Real-time communication**: Twilio + Socket.IO integration
+- 🛠️ **Domain-specific flows**: Prebuilt stories for healthcare and food services
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/vaishujay/rasa-multilingual-chatbot.git
+cd rasa-multilingual-chatbot
+2. Create a virtual environment
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+3. Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Train the bot
+bash
+Copy
+Edit
+rasa train
+5. Run actions and RASA server
+bash
+Copy
+Edit
+# In one terminal
+rasa run actions
+
+# In another terminal
+rasa run --enable-api
+6. (Optional) Run in Docker
+bash
+Copy
+Edit
+docker-compose up --build
